@@ -18,4 +18,32 @@ from django.urls import path, include
 
 urlpatterns = [
     path("users/", include("modules.users.urls")),
+
+
+    path(
+        "address/",
+        include("modules.address.urls")
+    ),
+
+
+    path(
+        "category-types/",
+        include(
+            "modules.category_type.urls"
+        )
+    ),
+    path(
+        "categories/",
+        include(
+            "modules.category.urls"
+        )
+    ),
+
+    path(
+        "products/",
+        include(
+            "modules.products.urls"
+        )
+    ),
+
 ]
