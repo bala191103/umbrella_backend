@@ -1,16 +1,16 @@
 from abc import ABC, abstractmethod
 
 
-class AddressRepository(ABC):
+class CartRepository(ABC):
 
     @abstractmethod
-    def create(self, data):
+    def add(self, data):
         pass
 
     @abstractmethod
-    def get_by_id(self, address_guid):
+    def get_user_cart(self, user_guid):
         pass
 
     @abstractmethod
-    def get_by_user(self, user_guid):
+    def remove(self, cart_guid):
         pass

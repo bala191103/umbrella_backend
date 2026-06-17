@@ -1,16 +1,16 @@
 from abc import ABC, abstractmethod
 
 
-class AddressRepository(ABC):
+class AttributeValueTypeRepository(ABC):
 
     @abstractmethod
     def create(self, data):
         pass
 
     @abstractmethod
-    def get_by_id(self, address_guid):
+    def get_by_id(self, guid):
         pass
 
     @abstractmethod
-    def get_by_user(self, user_guid):
+    def get_all(self):
         pass

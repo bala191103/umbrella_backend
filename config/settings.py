@@ -43,6 +43,12 @@ INSTALLED_APPS = [
     'modules.category_type',
     'modules.category',
     'modules.products',
+    'modules.product_review',
+    'modules.cart',
+    'modules.attribute_value_type',
+    'modules.attribute',
+    'modules.attribute_value',
+    
 ]
 
 MIDDLEWARE = [

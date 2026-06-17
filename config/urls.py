@@ -45,5 +45,37 @@ urlpatterns = [
             "modules.products.urls"
         )
     ),
+    path(
+        "reviews/",
+        include(
+            "modules.product_review.urls"
+        )
+    ),
+        path(
+        "cart/",
+        include(
+            "modules.cart.urls"
+        )
+    ),
+
+        path(
+        "attribute-value-types/",
+        include(
+            "modules.attribute_value_type.urls"
+        )
+    ),
+
+        path(
+        "attributes/",
+        include(
+            "modules.attribute.urls"
+        )
+    ),
+        path(
+        "attribute-values/",
+        include(
+            "modules.attribute_value.urls"
+        )
+    ),
 
 ]
